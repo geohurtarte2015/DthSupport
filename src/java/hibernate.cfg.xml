@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@//oracledes01-scan:3872/DVcrds</property>
+    <property name="hibernate.connection.username">MANAGER_PACKAGE</property>
+    <property name="hibernate.connection.password">B7F0BF9B78B3D715</property>
+    <property name="hbm2ddl.auto">update</property>
+    <property name="hibernate.show_sql">true</property>  
+    <mapping class="pojo.TbCasCommand"/>
+    <mapping class="pojo.TbUserDth"/>
+  </session-factory>
+</hibernate-configuration>
